@@ -1,0 +1,10 @@
+services:
+  CodeRank-postgres:
+    image: postgres:17
+    container_name: CodeRank_db
+    environment:
+      POSTGRES_DB: CodeRank
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres123
+    ports:
+      - "5432: 5432"
